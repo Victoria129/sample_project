@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,WAAW,CAAC;EACZ,OAAO,EAAE,IAAI;EACb,UAAU,EAAE,KAAK;EACjB,IAAI,EAAE,CAAC;CACN;;AAED,AAAA,OAAO,CAAA;EACL,WAAW,EAAE,MAAM;CACpB",
+    "sources": [
+        "topbarstyles.scss"
+    ],
+    "names": [],
+    "file": "topbarstyles.css"
+}
