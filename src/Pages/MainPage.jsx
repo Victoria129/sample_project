@@ -7,11 +7,15 @@ import { orange } from '@material-ui/core/colors'
 import AppMenu from "../components/AppMenu"
 import Fullcard from "../components/Fullcard"
 import Altcard from "../components/Altcard"
+import BrandsBar from "../components/BrandsBar"
+import Dropdowns from "../components/Dropdowns"
+import Details from "../components/Details"
+
 export default function MainPage() {
     return (
 
      <div>
-       <Productcard/>
+      <Details/>
      </div>
     )
 }

@@ -1,43 +1,13 @@
-.search {
-  width: 50%;
+.Bar {
+  background-color: orange;
+  height: auto;
+  width: 80%;
 }
 
-.search .searchTerm {
-  width: 70%;
-  height: 30px;
-  border-radius: 3px;
-  border: 1px solid Transparent;
-  padding: 3px;
-  margin: 10px;
-}
-
-/*
-
-
-
-<div class="search">
-<input type="text" class="searchTerm" placeholder="What are you looking for?">
-
-</input>
-<Button variant="contained">Search</Button>
-</div>
-
-
-*/
-.profile {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.img {
-  width: 50%;
-  height: 50%;
+.CardView {
+  background-color: orange;
+  width: 80%;
+  height: 100px;
+  border: 1px solid green;
 }
 /*# sourceMappingURL=topBar.css.map */
