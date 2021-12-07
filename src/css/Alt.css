@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background: white;
+  }
+  
+  .container {
+    width: 200px;
+    height: 250px;
+    margin: 30px auto;
+  }
+  
+ 
+  
+  .card-head {
+    position: relative;
+    height: 100px;
+    width:250px;
+    background: #fa782e;
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #fa782e 8%, #c82930 83%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #fa782e 8%, #c82930 83%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #fa782e 8%, #c82930 83%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#fa782e', endColorstr='#c82930', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+    border-radius: 0px 0px 5px 5px;
+  
+}
+  
+  .card-body {
+    height: 205px;
+    width:250px;
+    background: white;
+    border-radius: 25 25 0px 0px;
+  }
+  
+  .product-title {
+    padding: 10px 10px 5px 10px;
+    display: block;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  
+
+  .badge {
+    position: relative;
+    font-size: 10px;
+    font-weight: 300;
+    color: #fff;
+    background: #11e95b;
+    padding: 2px 5px;
+    border-radius: 4px;
+    top: -2px;
+    margin-left: 5px;
+  }
+  
+ 
+  
+ 
+
+  
+  
+  
+  
+
+  
+ 
+  
