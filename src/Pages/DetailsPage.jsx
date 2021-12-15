@@ -27,32 +27,6 @@ function DetailsPage() {
         <div>    
 <AppMenu/>
 
-
-<div>
-
-    <Card style={{width:"18%",height:"20%",backgroundColor:"gray"}}>
-<FormControl>
-    <hnKpbMTcxjnzNudduii5pbeP7>Filters</hnKpbMTcxjnzNudduii5pbeP7>
-      <InputLabel style={{width:"100%",backgroundColor:"gray"}} htmlFor="agent-simple"></InputLabel>
-      <Select
-      
-        value={selected}
-        onChange={handleChange}
-        inputProps={{
-          name: "agent",
-          id: "age-simple"
-        }}
-      >
-        {values.map((value,index) => {
-          return <MenuItem value={value}>{value}</MenuItem>;
-        })}
-      </Select>
-      
-      
-    </FormControl>    
-    </Card>
-</div>
-
 <ProdCard/>
 
         </div>
