@@ -2,12 +2,36 @@ import React from 'react'
 import "../css/details.css";
 import Box from '@material-ui/core/Box';
 import TextField from '@material-ui/core/TextField';
+import Card from '@material-ui/core/Card';
+import {CardMedia} from '@material-ui/core'
+import {CardActionArea} from '@material-ui/core'
+import SimpleImageSlider from "react-simple-image-slider"
 
 function Details() {
+    const images=[  { url: "images/1.jpg" },
+    { url: "https://pictures-uganda.jijistatic.com/4654554_7cfae9a3-d471-4469-93f4-4962e3435a25_1600x1200.webp" },
+    { url: "https://pictures-uganda.jijistatic.com/4654554_7cfae9a3-d471-4469-93f4-4962e3435a25_1600x1200.webp" },
+    { url: "https://pictures-uganda.jijistatic.com/4654554_7cfae9a3-d471-4469-93f4-4962e3435a25_1600x1200.webp" },
+    { url: "https://pictures-uganda.jijistatic.com/4654554_7cfae9a3-d471-4469-93f4-4962e3435a25_1600x1200.webp" },
+    { url: "https://pictures-uganda.jijistatic.com/4654554_7cfae9a3-d471-4469-93f4-4962e3435a25_1600x1200.webp" },
+    { url: "https://pictures-uganda.jijistatic.com/4654554_7cfae9a3-d471-4469-93f4-4962e3435a25_1600x1200.webp" }]
     return (
         <div>
             <section class="product">
-	
+                <Card padding>
+                <div>
+      <SimpleImageSlider
+        width={996}
+        height={504}
+        images={images}
+        showBullets={true}
+        showNavs={true}
+      />
+    </div>
+     
+    
+  </Card>
+
 	<div class="product__info">
 		<div class="title">
 			<h1>Toyota Kigege Ready for Work</h1>
@@ -17,13 +41,8 @@ function Details() {
 			UGX <span>500000000</span>
 		</div>
 		<div class="variant">
-			<h3>SELECT A COLOR</h3>
-			<ul>
-				<li><img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302064/codepen/delicious-apples/green-apple2.png" alt="green apple"/></li>
-				<li><img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302752/codepen/delicious-apples/yellow-apple.png" alt="yellow apple"/></li>
-				<li><img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302427/codepen/delicious-apples/orange-apple.png" alt="orange apple"/></li>
-				<li><img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302285/codepen/delicious-apples/red-apple.png" alt="red apple"/></li>
-			</ul>
+			<h3>Description</h3>
+			
 		</div>
 		<div class="description">
 			<h3>BENEFITS</h3>

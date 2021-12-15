@@ -1,73 +1,93 @@
 import styled from "styled-components"
 import MailIcon from '@material-ui/icons/Mail';
+import NotificationsIcon from '@material-ui/icons/Notifications';
+import ForumIcon from '@material-ui/icons/Forum';
+import SearchBar from "material-ui-search-bar"
+import AddIcon from '@material-ui/icons/Add';
+import AttachMoneyIcon from '@material-ui/icons/AttachMoney';
 import * as React from "react";
 
 
-const Menucomponent=styled.div`
-width: 100px;
-background-color:white;
-height: 100px;
-margin: 50px;
-border-Radius:0px 20px 0px 20px;
-box-sizing: border-box;
+const AppBar=styled.div`
+max-Width:100%;
+max-height:70px;
+background-color:#2B2B2B;
 display: flex;
-flex-direction: column;
+border-width: 0px 0px 3px 0px;
+border-style: solid;
+border-color:gray;
+align-Items:center;
+justify-content: space-between;
+padding:0px 8% 0% 5%;
+position:sticky;
+top:0px;
+`
+const IconsWrapper=styled.div`
+display: flex;
+align-Items:center;
+justify-content:space-evenly;
+max-width:30%;
+max-Width:70px;
+`
+
+const Icons=styled.div`
+max-width: 80%;
+max-height:50px;
 align-items: center;
 justify-content: center;
-padding: 0px;
-border: 2px solid gray;
+display: flex;
+border-radius:50%;
+background-color:orange;
+padding:5px;
+margin:5px;
+color:white;
+
 :hover{
-background-color: lightblue;
-
+  background-color:black;
+  width:100%;
+  height:100%;
 }
+ :active{
+max-Width:70%;
+max-height:70%;
 
+
+ }
 `
-const styles={
-    width: 100,
-    height: 100,
-    }
-
-    const Text=styled.h6`
-color:red;
-font-weight: bold;
-margin: 0px;
-:hover{
-  color:white;
-}
-
-`
-const imageStyles={
-    width: '60px',
-    height: '60px',
-    padding: "0px",
-    margin:"0px",
-  
-  }
-  
-  
-  const Wrapper=styled.div`
-  display:Grid;
-  grid-template-columns: repeat(4, 115px);
-    grid-template-rows: repeat(3, 115px);
-  align-items: center;
-  `
 
 
 function AppMenu() {
-    const [item,setItem]=React.useState([1,1,1,1,1,1,1,1])
-    return (
-          <Wrapper>
-    {item.map((i,item)=>(
-
+return(
+<div>
+<AppBar>
+  <img src="https://assets.jiji.ug/art/attributes/categories/vehicles.png" style={{maxWidth:"100%",maxHeight:"80px"}}/>
   
-  <Menucomponent>
-  <MailIcon color="secondary" style={imageStyles}/>
-   <Text>ELECTRONICS</Text>
-  </Menucomponent>
+<div>
+  <input type="input" placeholder="search.." />
+</div>
+  <IconsWrapper>
+  <Icons>
 
-))}
-  </Wrapper>
-    )
+ <AttachMoneyIcon></AttachMoneyIcon>
+  </Icons>
+
+  <Icons>
+ <MailIcon></MailIcon>
+  </Icons>
+  <Icons>
+ <NotificationsIcon></NotificationsIcon>
+  </Icons>
+  <Icons>
+ <AddIcon></AddIcon>
+  </Icons>
+  
+</IconsWrapper>
+</AppBar>
+
+</div>
+
+)
 }
+
 
 export default AppMenu

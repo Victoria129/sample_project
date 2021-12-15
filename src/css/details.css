@@ -1,20 +1,29 @@
 /* ----- Variables ----- */
 /* ----- Global ----- */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 
+html,
+body {
+  height: 100%;
+}
 
-
+body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  font-family: "Raleway", sans-serif;
+ 
+}
 
 h3 {
   font-size: 0.7em;
   letter-spacing: 1.2px;
   color: #a6a6a6;
 }
-
-.images{
-
-  height:49%;
-}
-
 
 img {
   max-width: 100%;
@@ -31,11 +40,8 @@ img {
   margin: auto;
   padding: 2.5em 0;
   min-width: 600px;
-  max-width:90%;
   background-color: white;
   border-radius: 5px;
-
-
 }
 
 /* ----- Photo Section ----- */
@@ -123,14 +129,14 @@ img {
 }
 
 .title span {
-  font-size: 0.4em;
+  font-size: 0.7em;
   color: #a6a6a6;
 }
 
 .price {
   margin: 1.5em 0;
   color: #ff3f40;
-  font-size: 0.7em;
+  font-size: 1.2em;
 }
 
 .price span {

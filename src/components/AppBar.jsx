@@ -1,22 +1,18 @@
 import * as React from 'react';
-import { styled, alpha } from '@material-ui/core/styles';
+import { alpha } from '@material-ui/core/styles';
 import AppBar from "@material-ui/core/AppBar";
 import Box from '@material-ui/core/Box';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
-import Typography from '@material-ui/core/Typography';
 import InputBase from '@material-ui/core/InputBase';
 import Badge from '@material-ui/core/Badge';
 import MenuItem from '@material-ui/core/MenuItem';
-import Menu from '@material-ui/core/Menu'; 
-import MenuIcon from '@material-ui/core/Menu'; 
-
-import SearchIcon from '@material-ui/icons/Search';
+import Menu from '@material-ui/core/Menu';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import MailIcon from '@material-ui/icons/Mail';
 import NotificationsIcon from '@material-ui/icons/Notifications';
-import MoreIcon from '@material-ui/icons/MoreVert';
-import Button from "@material-ui/core"
+import styled from 'styled-components';
+
 
 import colors from "../Module/Theme"
 
@@ -60,6 +56,27 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   },
 }));
 
+
+const Sell=styled.div`
+background-color:black;
+width:90px;
+height:30px;
+padding:1px;
+align-items: center;
+justify-content: center;
+margin:10px;
+color:white;
+display: flex;
+border-radius:10px;
+:active{
+  width:92px;
+  height:30px;
+  background-color:gray;
+  
+}
+`
+
+
 export default function AppBarr() {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
@@ -85,82 +102,7 @@ export default function AppBarr() {
   };
 
   const menuId = 'primary-search-account-menu';
-  const renderMenu = (
-    <Menu
-      anchorEl={anchorEl}
-      anchorOrigin={{
-        vertical: 'top',
-        horizontal: 'right',
-      }}
-      id={menuId}
-      keepMounted
-      transformOrigin={{
-        vertical: 'top',
-        horizontal: 'right',
-      }}
-      open={isMenuOpen}
-      onClose={handleMenuClose}
-    >
-      <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
-      <MenuItem onClick={handleMenuClose}>My account</MenuItem>
-    </Menu>
-  );
-
-  const mobileMenuId = 'primary-search-account-menu-mobile';
-  const renderMobileMenu = (
-    <Menu
-      anchorEl={mobileMoreAnchorEl}
-      anchorOrigin={{
-        vertical: 'top',
-        horizontal: 'right',
-      }}
-      id={mobileMenuId}
-      keepMounted
-      transformOrigin={{
-        vertical: 'top',
-        horizontal: 'right',
-      }}
-      open={isMobileMenuOpen}
-      onClose={handleMobileMenuClose}
-    >
-      <MenuItem>
-        <IconButton size="large" aria-label="show 4 new mails" color="inherit">
-          <Badge badgeContent={4} color="error">
-            <MailIcon />
-          </Badge>
-        </IconButton>
-        <p>Messages</p>
-      </MenuItem>
-      
-      <MenuItem>
-        <IconButton
-          size="large"
-          aria-label="show 17 new notifications"
-          color="inherit"
-        >
-          <Badge badgeContent={17} color="error">
-            <NotificationsIcon />
-          </Badge>
-        </IconButton>
-        <p>Notifications</p>
-      </MenuItem>
-      <MenuItem onClick={handleProfileMenuOpen}>
-        <IconButton
-          size="large"
-          aria-label="account of current user"
-          aria-controls="primary-search-account-menu"
-          aria-haspopup="true"
-          color="inherit"
-        >
-          <AccountCircle />
-        </IconButton>
-        <p>Profile</p>
-      </MenuItem>
-
-      
-    </Menu>
-  );
-
+  
 
 
 
@@ -203,6 +145,9 @@ export default function AppBarr() {
             >
               <AccountCircle />
             </IconButton>
+            
+      <Sell>Sell</Sell>
+      <Sell>Request</Sell>
           </Box>
          
         </Toolbar>

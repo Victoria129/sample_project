@@ -28,7 +28,7 @@ function Altcard() {
                 </span>
 </div>
         
-                <h3>UGX <b>250,300,000</b> </h3>
+                <h2>UGX <b>250,300,000</b> </h2>
         </span>
        
        

@@ -1,6 +1,7 @@
 import styled from "styled-components"
 import * as React from "react"
 import {Card} from "@material-ui/core"
+import DirectionsCarIcon from '@material-ui/icons/DirectionsCar';
 const Items=styled.div`
 
 display: flex;
@@ -19,8 +20,12 @@ display: flex;
 align-items: center;
 justify-content: center;
 box-shadow:1px solid black;
-
-
+`
+const Wrapper=styled.div`
+padding: 10px;
+margin: 0px';
+border-Radius:50%;
+background-color:lightgrey
 
 `
 
@@ -31,8 +36,10 @@ const [item,useItem]=React.useState([1,1,1,1,1,1,1,1])
             <Carded>
 {item.map((i,item)=>(
      
-            <Items>          
-            <img src="https://assets.jiji.ug/art/attributes/top-selection/buses-and-microbuses/volkswagen.png"/>
+            <Items> 
+           <Wrapper>         
+            <DirectionsCarIcon style={{fontSize:"50px"}}/>
+            </Wrapper>
             <h5>Mobile Phone</h5>
            </Items>
            
