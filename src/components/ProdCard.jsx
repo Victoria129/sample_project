@@ -16,13 +16,13 @@ import LocationOnIcon from '@material-ui/icons/LocationOn';
 
 
 const Wrapper=styled.div`
-width:50%;
+width:90%;
 height:200px;
 align-Items:center;
 display:flex;
 background-color:orange;
 border-Radius:10px;
-margin:10%;
+
 padding:0px;
 
 filter: drop-shadow(0px 3px 1px lightgray);
@@ -32,8 +32,7 @@ drop-shadow(offset-x offset-y blur-radius color);
  
 align-Items:center;
 display:flex;
-border-Radius:10px;
-margin:10%;
+
 padding:0px;
 filter: drop-shadow(2px 2px 2px #494a4d);
 drop-shadow(offset-x offset-y blur-radius color);
@@ -45,7 +44,7 @@ height:100%;
 width:100%;
 background-color:#2B2B2B;
 flex-direction:${(props)=> (props.direction? props.direction : "column")}
-block-size: fit-content;
+
 border-radius: 0px 0px 100px 0px;
 
 `
@@ -57,10 +56,9 @@ color:white;
 const Displaywrapper=styled.div`
 width:100%;
 display:flex;
+
 align-items:center;
 justify-content:space-between;
-
-
 `
 function ProdCard() {
     const theme = useTheme();
