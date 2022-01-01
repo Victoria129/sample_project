@@ -9,13 +9,13 @@ import Login from "./Pages/Login"
 import Premium from "./Pages/Premium"
 import MainPage from './Pages/MainPage';
 import Categories from "./Pages/Categories";
-
+import Jobscard from "./Pages/Jobscard";
 
 function App() {
 
 return(
 <div>
-<MainPage/>
+<Categories/>
 </div>
 )
 }
