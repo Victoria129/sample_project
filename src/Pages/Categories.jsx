@@ -6,6 +6,7 @@ import {Button} from "@material-ui/core"
 
 const Text =styled.div`
 color: white;
+font-style:italic;
 `
 const Listing=styled.li`
 display:flex;
@@ -38,7 +39,7 @@ function Categories() {
       
       <div class="appBar">
       
-        <Text>Katale Xpress</Text>
+      <Text>Gagasales.ug</Text>
        
       <div>
         <input type="input" placeholder="search.." />

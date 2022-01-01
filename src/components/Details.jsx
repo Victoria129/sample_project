@@ -3,7 +3,7 @@ import "../css/details.css";
 import { useEffect, useRef, useState } from "react";
 import Styled from "styled-components"
 import 'pure-react-carousel/dist/react-carousel.es.css';
-
+import Slider from "./Slider"
 
 const Wrapper=Styled.div`
 width:99%;
@@ -54,7 +54,15 @@ function Details() {
 const [descriptions,setDescriptions] =useState([1,1,1,1,1,,1,1,1])
 	
 	return (
+		<div>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+	
 	<div style={{display:"flex",justifyContent:"space-between"}}>
+
+
 <div>
 <h1>Adverts Here</h1>
 </div>
@@ -100,6 +108,7 @@ const [descriptions,setDescriptions] =useState([1,1,1,1,1,,1,1,1])
 	<h1>Adverts Here</h1>
 	</div>
 
+  </div>
   </div>
         
     )

@@ -1,7 +1,7 @@
 import React from 'react'
 import Details from "../components/Details"
 import styled from "styled-components"
-
+import Slider from "../components/Slider"
 const Text=styled.div`
 color:white;
 `
@@ -27,6 +27,7 @@ function ProductDetails() {
       <br/>
       <br/>
       <br/>
+
     
             <Details/>
         </div>

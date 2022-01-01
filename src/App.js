@@ -15,7 +15,7 @@ function App() {
 
 return(
 <div>
-<Categories/>
+<ProductDetails/>
 </div>
 )
 }
