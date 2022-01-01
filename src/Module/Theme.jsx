@@ -1,34 +1,8 @@
 export const theme = {
     colorMap: {
-      grey: { text: "#7f8297", background: "#f6f8fa" },
-      red: { text: "#df516e", background: "#fdf5f8" },
-      orange: { text: "#f79e44", background: "#fef0e0" },
-      yellow: { text: "#f7c744", background: "#fef8e0" },
-      green: { text: "#74c98f", background: "#ecfef4" },
-      blue: { text: "#429ef0", background: "#f3fafe" },
-      purple: { text: "#6945e1", background: "#f7f5fe" },
+     
     },
     colors: {
-      primary: "#ff6d00",
-      primary_light: "#ff6d00",
-      secondary: "#ff6d00",
-      grey: "#b0b0b0",
-      med_light_grey: "#868a91",
-      med_grey: "#3b3f47",
-      dark_grey: "#202226",
-      light_grey: "#dadfe7",
-      ultra_light_grey: "#f8f9fb",
-      input_border: "#d3d3d3",
-      grey_background: "#f3f5f8",
-      gold: "#CCA883",
-      yellow: "#f0d616",
-      orange: "#e39517",
-      red: "#ff6d00",
-      white: "#ffffff",
-      primary_ultra_light: "#f1f6fe",
-      grey_bg: "#f6f8fa",
-      placeholder: "#a2aab5",
-      header: "#192330",
-      bgbutton:"#f7f9fB"
+     
     },
   };

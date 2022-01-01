@@ -1,13 +1,11 @@
 import styled from "styled-components"
 import MailIcon from '@material-ui/icons/Mail';
 import NotificationsIcon from '@material-ui/icons/Notifications';
-import ForumIcon from '@material-ui/icons/Forum';
-import SearchBar from "material-ui-search-bar"
 import AddIcon from '@material-ui/icons/Add';
 import AttachMoneyIcon from '@material-ui/icons/AttachMoney';
 import * as React from "react";
 
-
+//Illustration by <a href="https://icons8.com/illustrations/author/5c07e68d82bcbc0092519bb6">Icons 8</a> from <a href="https://icons8.com/illustrations">Ouch!</a>
 const AppBar=styled.div`
 max-Width:100%;
 max-height:70px;
@@ -19,7 +17,8 @@ border-color:gray;
 align-Items:center;
 justify-content: space-between;
 padding:0px 8% 0% 5%;
-position:sticky;
+position:fixed;
+z-index:9999;
 top:0px;
 `
 const IconsWrapper=styled.div`
