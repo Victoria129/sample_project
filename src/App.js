@@ -10,12 +10,12 @@ import Premium from "./Pages/Premium"
 import MainPage from './Pages/MainPage';
 import Categories from "./Pages/Categories";
 import Jobscard from "./Pages/Jobscard";
-
+import NewItem from './Pages/NewItem';
 function App() {
 
 return(
 <div>
-<ProductDetails/>
+<Premium/>
 </div>
 )
 }

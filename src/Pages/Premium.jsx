@@ -1,9 +1,10 @@
 import React from 'react'
+import Muiltiuploads from "../components/Multiuploads"
 
 function Premium() {
     return (
         <div>
-            <h3>big msn</h3>
+        <Muiltiuploads/>
         </div>
     )
 }

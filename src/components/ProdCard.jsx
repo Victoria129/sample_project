@@ -63,7 +63,7 @@ function ProdCard() {
         <div>
           <Displaywrapper>
             <Text>Samsung Galaxy Note 8 64 GB Blue</Text>
-            <Chip label={false ? "Promoted" : "Premium"} color="secondary" />
+            <Chip label={false ? "Promoted" : "Premium"} color="secondary" style={{width:"100px"}} />
             <Chip icon={<LocationOnIcon />} label="Kampala" />
           </Displaywrapper>
           <Displaywrapper>
