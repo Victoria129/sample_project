@@ -16,7 +16,6 @@ body {
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
   font-family: "Raleway", sans-serif;
- 
 }
 
 h3 {
@@ -65,7 +64,6 @@ img {
 
 .photo-main {
   border-radius: 6px 6px 0 0;
-  background-color: #9be010;
   background: radial-gradient(#e5f89e, #96e001);
 }
 
@@ -129,7 +127,7 @@ img {
 }
 
 .title span {
-  font-size: 0.7em;
+  font-size: 25px;
   color: #a6a6a6;
 }
 
@@ -141,7 +139,7 @@ img {
 
 .price span {
   padding-left: 0.15em;
-  font-size: 2.9em;
+  font-size: 2.0em;
 }
 
 .variant {
