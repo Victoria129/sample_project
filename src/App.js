@@ -11,11 +11,13 @@ import MainPage from './Pages/MainPage';
 import Categories from "./Pages/Categories";
 import Jobscard from "./Pages/Jobscard";
 import NewItem from './Pages/NewItem';
+import Cardcomponent from "./components/Cardcomponent"
+import Options from "./components/Options"
 function App() {
 
 return(
 <div>
-<Premium/>
+<MainPage/>
 </div>
 )
 }

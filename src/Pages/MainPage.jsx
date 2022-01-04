@@ -10,7 +10,33 @@ import Card from '@material-ui/core/Card';
 import CardMedia from '@material-ui/core/CardMedia';
 import { CardActionArea } from '@material-ui/core';
 import {CardContent} from '@material-ui/core';
-import {Button} from "@material-ui/core";
+import {Button as button} from "@material-ui/core";
+import {Chip} from '@material-ui/core';
+import Cardcomponent from "../components/Cardcomponent"
+import Options from "../components/Options"
+
+
+const Button = styled.div`
+  width: 90%;
+    height: 230px;
+  border-radius:20px 0px 20px 0px;
+  margin:5px;
+  padding: 0px;
+`
+
+const Container=styled.div`
+margin:0px 5px;
+height: 15;
+align-items: center;
+display: inline-block;
+`
+
+const Text=styled.h4`
+font-size:${props =>props.size ? props.size:"13px"};
+color:${props=>props.color ? "purple" : "#2e2e2e"};
+margin:2px;
+padding:0px;
+`
 
 
 
@@ -24,9 +50,7 @@ align-Items:center;
 background-color: white;
 box-shadow: 0 1px 5px rgba(0,0,0,0.25), 0 0 50px rgba(0,0,0,0.1);
 position: sticky;
-:hover{
-  
-}
+
 `
 const Images=styled.img`
 src=${props=>props.src ? props.src : null}
@@ -40,24 +64,8 @@ max-width:100px;
 max-height:100px;
 margin: 0px;
 `
-const Display=styled.div`
-display: grid;
-  grid-template-columns: repeat(6, 153px);
-  grid-template-rows: repeat(3, 152px);
-  justify-content:center;
-  background-color:white;
-  width:100%;
-  margin:40px 0px 0px 0px;
 
-`
-const Prodisplay=styled.div`
-display: grid;
-  grid-template-columns: repeat(5, 200px);
-  grid-template-rows: repeat(4, 260px);
-justify-Content:center;
-  background-color:Aliceblue;
-  width:100%;
-`
+
 const Pills=styled.div`
 width: 150px;
 height:50px;
@@ -96,8 +104,32 @@ background-image: url("https://image.shutterstock.com/image-vector/pet-store-dog
 background-repeat: no-repeat;
 background-size: cover;
 `
-const Text =styled.div`
+const Texts =styled.div`
 color: white;
+`
+const flexer=styled.div`
+width:100%;
+align-Items:center;
+display:flex;
+flex-direction:column;
+
+`
+const Display=styled.div`
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(120px,80px));
+grid-template-rows: repeat(auto-fit, minmax(120px,80px));
+grid-auto-rows: minmax(100px, auto);
+width:80%
+`
+
+const Prodisplay=styled.div`
+display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px,110px));
+  grid-gap:10px;
+  background-color:white;
+  width:80%;
+  margin:15px;
+  padding:0px;
 `
 
 export default function MainPage(){
@@ -121,12 +153,15 @@ console.log(error)
 
 
     return (
+     
+
+   
       <div>
       <section>
       
 <div class="appBar">
 
-  <Text>Katale Xpress</Text>
+  <Texts>GAGASALES.UG</Texts>
  
 <div>
 <div class="wrap">
@@ -141,27 +176,24 @@ console.log(error)
 <div></div>
 </div>
 </section>
-<br/>
-<section>
-  <Display>
-    {loading ?
-     
 
- <>    
-{Products.map(()=>(
+<section>
+<flexer>
+  <Display>
+  
+
+  
+{[1,1,1,1,1,1,1,1,1,1,1,1,1].map(()=>(
   <div>
-  <Cards>
-<Images src="https://assets.jiji.ug/art/attributes/categories/mobile.png" styles={{margin:"0px",height:"30px"}}/>
-<h5>Mobile Phones</h5>
-</Cards>
+    <Button>
+  <Options/>
+</Button>
   </div>
 ))}
-</>
-:
-<h2>Loading Products</h2>
-}
 
 </Display>
+
+</flexer>
 </section>
 
 <section>
@@ -187,19 +219,19 @@ console.log(error)
 <Prodisplay>
 {Products.map((item,i)=>(
  
-  <Productcard/>
+ <div>   
+    <Button>      
+    <Cardcomponent/> 
+  </Button>    
+    </div>
   
 ))}
 </Prodisplay>
 </section>
-<footer>
 <Footers>
-<h3>hello there</h3>
-</Footers>
 
-</footer>
+</Footers>
        </div>
-       
     )}
 
 

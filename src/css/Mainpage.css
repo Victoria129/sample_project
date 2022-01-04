@@ -44,6 +44,7 @@ color:white;
 
 .appBar{
     max-Width:100%;
+    min-width: none;
     height: 70px;
     margin-top: -10px;
 max-height:100px;
@@ -57,6 +58,8 @@ position:fixed;
 width:100%;
 top:0;
 z-index: 9999;
+
+
 }
 
 .Wrapper{
@@ -125,3 +128,50 @@ body{
 }
   
   
+
+
+.Cardstyle{
+  width:215px;
+  height:280px;
+  background-color:white;
+
+  @media (min-width: 1025px) {
+    width:215px;
+  height:280px;
+  background-color:white;
+
+  }
+}
+
+.Imgstyle{
+  height:210px;
+}
+
+
+/*
+New items to be cropped to linking
+*/
+
+.Cardstyle{
+  width:215px;
+  height:270px;
+  background-color:white;
+
+  @media (min-width:769px) and (max-width:1024px) {
+    width:115px;
+    height:200px;
+    background-color:orange;
+   }
+}
+
+
+
+.Imgstyle{
+  height:200px;
+@media (min-width:769px) and (max-width:1024px) {
+  height:150px;
+}
+
+
+}
+

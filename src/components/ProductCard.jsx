@@ -62,13 +62,6 @@ export default function Productcard(props) {
 }
 
 
-const Swiftcard=styled.div`
-width:250px;
-height:400px;
-background-Color:green;
-
-border:1px solid black;
-`
 
 
 
